@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PSA Candidate",
+  "type": "object",
+  "required": [
+    "title",
+    "original_url",
+    "source_name",
+    "summary",
+    "topics",
+    "scores"
+  ],
+  "properties": {
+    "title": { "type": "string", "minLength": 1 },
+    "original_url": { "type": "string", "format": "uri" },
+    "original_reporting_url": { "type": "string", "format": "uri" },
+    "primary_source_url": { "type": "string", "format": "uri" },
+    "source_name": { "type": "string" },
+    "source_registry_id": { "type": "string" },
+    "source_type": { "type": "string" },
+    "source_country": { "type": "string" },
+    "published_at": { "type": "string" },
+    "summary": { "type": "string" },
+    "topics": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "key_facts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["text", "source_url"],
+        "properties": {
+          "text": { "type": "string" },
+          "source_url": { "type": "string", "format": "uri" }
+        }
+      }
+    },
+    "scores": {
+      "type": "object",
+      "required": ["total", "community_risk"],
+      "properties": {
+        "source_confidence": { "type": "number", "minimum": 0, "maximum": 100 },
+        "editorial_fit": { "type": "number", "minimum": 0, "maximum": 100 },
+        "hope_connection": { "type": "number", "minimum": 0, "maximum": 100 },
+        "interestingness": { "type": "number", "minimum": 0, "maximum": 100 },
+        "aotearoa_relevance": { "type": "number", "minimum": 0, "maximum": 100 },
+        "social_potential": { "type": "number", "minimum": 0, "maximum": 100 },
+        "originality": { "type": "number", "minimum": 0, "maximum": 100 },
+        "recency": { "type": "number", "minimum": 0, "maximum": 100 },
+        "community_risk": { "type": "number", "minimum": 0, "maximum": 100 },
+        "total": { "type": "number", "minimum": 0, "maximum": 100 }
+      }
+    }
+  }
+}
