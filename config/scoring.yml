@@ -1,0 +1,31 @@
+version: 1
+
+weights:
+  source_confidence: 20
+  editorial_fit: 20
+  hope_connection: 15
+  interestingness: 15
+  aotearoa_relevance: 10
+  social_potential: 10
+  originality: 5
+  recency: 5
+
+thresholds:
+  minimum_candidate_score: 60
+  priority_score: 85
+  strong_score: 75
+  maximum_community_risk: 70
+
+community_risk:
+  base: 10
+  high_risk_term_penalty: 12
+  hard_exclusion_score: 100
+  max: 100
+
+rules:
+  primary_source_bonus: 8
+  nz_source_bonus: 12
+  constructive_term_bonus: 4
+  multiple_topic_bonus: 3
+  missing_summary_penalty: 5
+  stale_after_days: 30
