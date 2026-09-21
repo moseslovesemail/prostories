@@ -1,0 +1,262 @@
+version: 1
+
+sources:
+  - id: doc
+    name: Department of Conservation
+    country: NZ
+    source_type: primary
+    editorial_mode: filtered
+    enabled: true
+    trust: 98
+    weight: 1.25
+    topics: [animals, natural_world, environmental_progress, accountability]
+    ingest:
+      method: rss
+      url: http://www.doc.govt.nz/news/rss-feed-to-govtnz/
+
+  - id: nz_music_commission
+    name: NZ Music Commission
+    country: NZ
+    source_type: primary
+    editorial_mode: filtered
+    enabled: true
+    trust: 92
+    weight: 1.15
+    topics: [music, culture]
+    ingest:
+      method: html
+      url: https://nzmusic.org.nz/music-industry-news/
+
+  - id: te_papa
+    name: Museum of New Zealand Te Papa Tongarewa
+    country: NZ
+    source_type: primary
+    editorial_mode: auto
+    enabled: true
+    trust: 96
+    weight: 1.2
+    topics: [art, natural_world, science, culture]
+    ingest:
+      method: html
+      url: https://www.tepapa.govt.nz/about/press-and-media/press-releases/2026-media-releases
+
+  - id: auckland_university
+    name: University of Auckland
+    country: NZ
+    source_type: primary
+    editorial_mode: filtered
+    enabled: true
+    trust: 94
+    weight: 1.15
+    topics: [science, psychology, research, culture]
+    ingest:
+      method: html
+      url: https://www.auckland.ac.nz/en/news.html
+
+  - id: massey
+    name: Massey University
+    country: NZ
+    source_type: primary
+    editorial_mode: filtered
+    enabled: true
+    trust: 94
+    weight: 1.15
+    topics: [science, animals, psychology, food, design]
+    ingest:
+      method: html
+      url: https://www.massey.ac.nz/about/news/
+
+  - id: canterbury
+    name: University of Canterbury
+    country: NZ
+    source_type: primary
+    editorial_mode: filtered
+    enabled: true
+    trust: 94
+    weight: 1.15
+    topics: [science, research, creative_technology, community]
+    ingest:
+      method: html
+      url: https://www.canterbury.ac.nz/news-and-events/news
+
+  - id: otago
+    name: University of Otago
+    country: NZ
+    source_type: primary
+    editorial_mode: filtered
+    enabled: true
+    trust: 94
+    weight: 1.15
+    topics: [science, psychology, research, culture]
+    ingest:
+      method: html
+      url: https://www.otago.ac.nz/news/newsroom
+
+  - id: royal_society
+    name: Royal Society Te Apārangi
+    country: NZ
+    source_type: primary
+    editorial_mode: filtered
+    enabled: true
+    trust: 97
+    weight: 1.2
+    topics: [science, research, culture]
+    ingest:
+      method: html
+      url: https://www.royalsociety.org.nz/news
+
+  - id: auckland_zoo
+    name: Auckland Zoo
+    country: NZ
+    source_type: primary
+    editorial_mode: auto
+    enabled: true
+    trust: 94
+    weight: 1.2
+    topics: [animals, conservation, community]
+    ingest:
+      method: html
+      url: https://www.aucklandzoo.co.nz/news
+
+  - id: nz_on_air
+    name: NZ On Air
+    country: NZ
+    source_type: primary
+    editorial_mode: filtered
+    enabled: true
+    trust: 94
+    weight: 1.1
+    topics: [music, film, video_games, culture]
+    ingest:
+      method: html
+      url: https://www.nzonair.govt.nz/news/
+
+  - id: creative_nz
+    name: Creative New Zealand
+    country: NZ
+    source_type: primary
+    editorial_mode: filtered
+    enabled: true
+    trust: 93
+    weight: 1.1
+    topics: [art, theatre, culture]
+    ingest:
+      method: html
+      url: https://creativenz.govt.nz/news-and-blog
+
+  - id: arts_foundation
+    name: The Arts Foundation Te Tumu Toi
+    country: NZ
+    source_type: primary
+    editorial_mode: auto
+    enabled: true
+    trust: 92
+    weight: 1.1
+    topics: [art, music, film, theatre, books]
+    ingest:
+      method: html
+      url: https://www.thearts.co.nz/news
+
+  - id: nz_film_commission
+    name: New Zealand Film Commission
+    country: NZ
+    source_type: primary
+    editorial_mode: filtered
+    enabled: true
+    trust: 92
+    weight: 1.05
+    topics: [film, culture]
+    ingest:
+      method: html
+      url: https://www.nzfilm.co.nz/news
+
+  - id: nz_book_awards
+    name: New Zealand Book Awards Trust
+    country: NZ
+    source_type: primary
+    editorial_mode: auto
+    enabled: true
+    trust: 92
+    weight: 1.1
+    topics: [books, culture]
+    ingest:
+      method: html
+      url: https://www.nzbookawards.nz/new-zealand-book-awards/news
+
+  - id: commerce_commission
+    name: Commerce Commission
+    country: NZ
+    source_type: primary
+    editorial_mode: filtered
+    enabled: true
+    trust: 98
+    weight: 1.15
+    topics: [consumer_wins, accountability]
+    ingest:
+      method: html
+      url: https://www.comcom.govt.nz/news-and-media/news-and-events
+
+  - id: consumer_protection
+    name: Consumer Protection New Zealand
+    country: NZ
+    source_type: primary
+    editorial_mode: auto
+    enabled: true
+    trust: 98
+    weight: 1.15
+    topics: [consumer_wins, life_hacks]
+    ingest:
+      method: html
+      url: https://www.consumerprotection.govt.nz/news-and-media
+
+  - id: nzgda
+    name: New Zealand Game Developers Association
+    country: NZ
+    source_type: primary
+    editorial_mode: filtered
+    enabled: true
+    trust: 88
+    weight: 1.0
+    topics: [video_games, creative_technology]
+    ingest:
+      method: html
+      url: https://www.nzgda.com/blog
+
+  - id: nasa_jpl
+    name: NASA Jet Propulsion Laboratory
+    country: US
+    source_type: primary
+    editorial_mode: auto
+    enabled: true
+    trust: 99
+    weight: 1.1
+    topics: [space, science, creative_technology]
+    ingest:
+      method: rss
+      url: https://www.jpl.nasa.gov/feeds/news/
+
+  - id: esa
+    name: European Space Agency
+    country: EU
+    source_type: primary
+    editorial_mode: auto
+    enabled: true
+    trust: 99
+    weight: 1.05
+    topics: [space, science]
+    ingest:
+      method: html
+      url: https://www.esa.int/Newsroom
+
+  - id: smithsonian
+    name: Smithsonian Institution Research News
+    country: US
+    source_type: primary
+    editorial_mode: auto
+    enabled: true
+    trust: 97
+    weight: 1.0
+    topics: [animals, science, natural_world, art, culture]
+    ingest:
+      method: html
+      url: https://www.si.edu/newsdesk/research-news
