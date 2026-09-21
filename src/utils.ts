@@ -2,14 +2,14 @@ import crypto from "node:crypto";
 
 export function stripHtml(input = ""): string {
   return input
-    .replace(/<script[\\s\\S]*?<\\/script>/gi, " ")
-    .replace(/<style[\\s\\S]*?<\\/style>/gi, " ")
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
     .replace(/<[^>]+>/g, " ")
     .replace(/&nbsp;/gi, " ")
     .replace(/&amp;/gi, "&")
     .replace(/&#39;/g, "'")
     .replace(/&quot;/g, '"')
-    .replace(/\\s+/g, " ")
+    .replace(/\s+/g, " ")
     .trim();
 }
 
