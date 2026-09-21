@@ -1,0 +1,145 @@
+version: 1
+
+mission:
+  desired_reader_state:
+    - more hopeful
+    - more connected
+  principles:
+    - facts_first
+    - sources_visible
+    - humans_have_personality
+    - constructive_not_naive
+    - low_conflict_by_design
+    - support_original_creators
+
+sections:
+  culture:
+    label: Culture
+    topics: [music, books, film, theatre, comedy, food, art, web_series]
+  mind:
+    label: Mind
+    topics: [psychology, philosophy, research, meta_analysis, life_hacks, minimal_living]
+  world:
+    label: World
+    topics: [animals, natural_world, space, science, environmental_progress]
+  play:
+    label: Play
+    topics: [video_games, internet_culture, creative_technology]
+  people:
+    label: People
+    topics: [community, human_ingenuity, consumer_wins, accountability, connection]
+
+hard_exclusions:
+  - partisan politics
+  - election campaigning
+  - celebrity scandal
+  - public shaming
+  - graphic crime
+  - culture-war conflict
+  - tragedy without resolution
+  - fear-driven health stories
+  - sport
+  - television gossip
+  - spirituality
+  - memes
+  - generic business news
+
+exclude_terms:
+  - election
+  - political party
+  - parliament attack
+  - left-wing
+  - right-wing
+  - culture war
+  - woke
+  - anti-woke
+  - celebrity feud
+  - scandal
+  - slammed online
+  - social media backlash
+  - murder
+  - homicide
+  - graphic
+  - massacre
+  - war footage
+  - betting odds
+  - sports result
+  - share price
+  - stock market
+  - merger
+  - quarterly earnings
+
+high_risk_terms:
+  - election
+  - government policy
+  - political party
+  - protest
+  - boycott
+  - religion
+  - gender war
+  - culture war
+  - immigration
+  - abortion
+  - firearm
+  - crime
+  - killed
+  - death
+  - lawsuit
+  - controversy
+  - backlash
+
+constructive_terms:
+  - restored
+  - recovery
+  - recovered
+  - rescued
+  - rehomed
+  - discovered
+  - breakthrough
+  - first
+  - improved
+  - improvement
+  - solved
+  - solution
+  - returned to consumers
+  - refund
+  - restitution
+  - conservation
+  - collaboration
+  - community
+  - volunteer
+  - successful
+  - milestone
+  - released
+  - exhibition
+  - award
+  - research finds
+  - new species
+  - restoration
+
+topic_keywords:
+  music: [music, musician, song, album, single, composer, songwriter, waiata, band]
+  books: [book, author, novel, poetry, writer, literary]
+  film: [film, filmmaker, cinema, documentary, short film]
+  theatre: [theatre, stage, playwright, production]
+  comedy: [comedy, comedian, funny, humour]
+  food: [food, chef, recipe, restaurant, kai, cooking]
+  art: [art, artist, gallery, exhibition, sculpture, painting, design]
+  psychology: [psychology, behaviour, cognition, attention, learning, wellbeing, happiness]
+  philosophy: [philosophy, ethics, meaning, reasoning]
+  meta_analysis: [meta-analysis, systematic review, review of studies]
+  life_hacks: [practical, guide, how to, everyday, tips]
+  minimal_living: [minimalism, repair, reuse, simple living, declutter]
+  animals: [animal, bird, whale, dolphin, dog, cat, wildlife, species, zoo, kākāpō, kiwi]
+  natural_world: [nature, ocean, forest, river, marine, ecology, habitat]
+  space: [space, nasa, esa, planet, moon, mars, galaxy, star, telescope, asteroid]
+  science: [science, research, scientist, study, discovery, laboratory]
+  environmental_progress: [restoration, conservation, biodiversity, renewable, habitat recovery]
+  video_games: [game, gaming, videogame, studio, developer]
+  internet_culture: [internet, digital culture, online community, social media]
+  creative_technology: [technology, robotics, digital, invention, innovation, creative tech]
+  community: [community, neighbourhood, local, volunteer, collective]
+  human_ingenuity: [inventor, invention, ingenuity, built, designed, created]
+  consumer_wins: [consumer, refund, compensation, returned to customers, remediation]
+  accountability: [reparation, restitution, penalty, ordered to pay, enforcement, accountability]
+  connection: [together, connection, belonging, friendship, collective]
